@@ -1,0 +1,378 @@
+#Gaigai {
+    padding: 14px 90px;
+}
+
+@font-face {
+    font-family: 'BrandonText-Thin_0';
+    src: url('../fonts/BrandonText-Thin_0.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'Aver';
+    src: url('../fonts/Aver.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Aver Bold';
+    src: url('../fonts/Aver Bold Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Brandon Text Medium';
+    src: url('../fonts/BrandonText-Medium.otf') format("opentype");
+
+}
+
+@font-face {
+    font-family: 'BrandonText-Regular_2';
+    src: url('../fonts/BrandonText-Regular_2.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'BrandonText-Bold';
+    src: url('../fonts/BrandonText-Bold.otf') format("opentype");
+}
+
+body {
+    font-family: BrandonText-Regular_2;
+}
+
+.navbar {
+    min-height: 81px;
+    background: #3d3f57 url("../img/line2.png") repeat-x top center;
+    border: none;
+    border-radius: 0;
+    padding-top: 7px;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Brandon Text Medium';
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a.focus {
+    color: #46c8a8;
+}
+
+.jumbotron {
+    background: #3d3f57;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.jumbotron h1,
+.jumbotron .h1 {
+    font-family: 'Aver Bold';
+    font-size: 50px;
+    font-style: italic;
+
+}
+
+.carousel-indicators li {
+    border: 1px solid #49e1b7;
+    background-color: #727272;
+}
+
+.img-wrap img {
+    margin-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 0px;
+    }
+}
+
+h1 {
+    font-family: 'Aver Bold';
+    font-style: italic;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Aver Bold';
+    font-weight: bold;
+    font-style: italic;
+}
+
+.carousel-inner .item .say {
+    color: white;
+    height: 300px;
+    background: #38373b;
+    text-align: left;
+    padding-top: 90px;
+}
+
+.carousel-inner .item .say span {
+    font-family: Aver;
+    margin-left: 130px;
+    display: block;
+    padding-top: 15px;
+}
+
+.carousel-inner .item .say img {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: white solid 2px;
+}
+
+.carousel-inner .item .say h2 {
+    margin: 0;
+    padding: 30px;
+}
+
+.list li {
+    font-size: 21px;
+    font-weight: 200;
+    color: #464963;
+    font-family: Brandon Text Medium;
+    margin-bottom: 20px;
+}
+
+.list li img {
+    margin-right: 20px;
+}
+
+.btn1 {
+    background-color: #3d3f57;
+    border: 2px solid #46c8a8;
+    color: #46c8a8;
+    padding: 14px 40px;
+    letter-spacing: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: BrandonText-Bold;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    background-color: #3d3f57;
+    color: #46c8a8;
+    border: 2px solid #46c8a8;
+}
+
+.link-store img {
+    width: 120px;
+}
+
+.blog-bg {
+    background: url("../img/blog.bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.blog-content {
+    background-color: rgba(34, 34, 38, 0.60);
+    color: white;
+}
+
+/* scroll style from https://cloud.google.com/pricing/ */
+
+.scroll-nav-container {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 2em;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.scroll-nav-item-container {
+    margin-top: 16px;
+    width: 7px;
+    height: 7px;
+    position: relative;
+}
+
+.scroll-nav-item-container:nth-child(1) {
+    margin-top: 0;
+}
+
+.scroll-nav-item {
+    width: 10px;
+    height: 10px;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #727272;
+    cursor: pointer;
+}
+
+.active .scroll-nav-item {
+    background-color: #6c6c6c;
+    border: 3px solid #40dbac;
+    width: 12px;
+    height: 12px;
+}
+.form-control:focus {border-color:#ceced5!important;
+-webkit-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    box-shadow: none!important;
+}
+textarea:focus {
+    outline: none !important;
+    border-color:#ceced5;
+    box-shadow: none;
+}
+/*override start*/
+.carousel-control.left, .carousel-control.right {
+    background: none;
+}
+
+/*override end*/
+
+/*animations start*/
+.t1 {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    transition: all 2s;
+    position: relative;
+}
+
+.p1-left-start {
+    top: -770px;
+    opacity: 0;
+}
+
+.p1-left-end {
+    top: 0;
+    opacity: 1;
+}
+
+.p1-right-start {
+    opacity: 0.3;
+    right: -500px;
+}
+
+.p1-right-end {
+    opacity: 1;
+    right: 0;
+}
+
+.p2-left-start {
+    left: -770px;
+    opacity: 0;
+}
+
+.p2-left-end {
+    left: 0;
+    opacity: 1;
+}
+
+.p2-right-start {
+    opacity: 0.3;
+    right: -500px;
+}
+
+.p2-right-end {
+    opacity: 1;
+    right: 0;
+}
+/*animations end*/
+
+/*responsive design start*/
+#p1 {
+    padding-bottom: 0px;
+}
+
+img.paktor {
+    padding-top: 175px;
+}
+
+.intro {
+    padding-top: 120px;
+}
+
+.intro h2 {
+    padding-top: 200px;
+}
+
+.tips h2 {
+    padding-top: 70px;
+}
+
+.about h2 {
+    padding-top: 100px;
+}
+
+.about .see-more {
+    margin-top: 150px;
+}
+
+.why-paktor {
+    padding-left: 40px;
+}
+
+.why-paktor2 {
+    padding-bottom: 130px;
+}
+
+@media (max-width: 991px ) {
+    #p1 {
+        padding-bottom: 20px;
+    }
+
+    img.paktor {
+        padding-top: 60px;
+    }
+
+    .intro {
+        padding-top: 0px;
+    }
+
+    .intro h2 {
+        padding-top: 100px;
+    }
+
+    .intro .img-responsive {
+        display: inline;
+        margin-top: 50px;
+    }
+
+    .carousel-inner .item .say {
+        height: 380px;
+        text-align: center;
+    }
+
+    .carousel-inner .item .say img {
+        display: inline;
+        position: inherit;
+    }
+
+    .carousel-caption {
+        text-align: left;
+    }
+
+    .tips {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+
+    .tips h2 {
+        padding-top: 0px;
+    }
+
+    .about h2 {
+        padding-top: 50px;
+    }
+
+    .about .see-more {
+        margin-top: 50px;
+    }
+
+    .why-paktor {
+        padding-left: 0px;
+        margin-top: 60px;
+    }
+
+    .why-paktor2 {
+        padding-bottom: 80px;
+    }
+}
+
+/*responsive design end */
