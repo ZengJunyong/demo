@@ -12,26 +12,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
-<body ng-app="PaktorApp" debug-scope>
+<body ng-app="DemoApp" debug-scope>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<nav class="navbar navbar-inverse  ">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Demo Management Proposal</a>
-        </div>
-    </div>
-</nav>
 <div class="container">
 
     <h3>1. Selection</h3>
@@ -52,6 +38,7 @@
                 <option value="1">Medium</option>
                 <option value="2">...</option>
             </select>
+
             <form>
                 <div class="radio">
                     <label>
@@ -66,11 +53,78 @@
                     </label>
                 </div>
             </form>
-            <button type="button" class="btn btn-primary">OK</button>
+            <!--<button type="button" class="btn btn-primary">OK</button>-->
         </div>
     </div>
 
     <h3>2. Details</h3>
+
+    <div class="row">
+        <div class="col-sm-3" style="padding: 50px;text-align: center;">
+            Demo PIC
+        </div>
+        <div class="col-sm-9" style="padding: 50px;text-align: center;">
+            General Information
+
+            eg: Main Function
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="padding: 50px;text-align: center;">
+            Demo Details
+        </div>
+    </div>
+    <ul>Attachment
+        <li>
+            <a href="#">1.pdf</a>
+        </li>
+        <li>
+            <a href="#">2.pdf</a>
+        </li>
+    </ul>
+
+    <h3>3. Confirmation</h3>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div ng-controller="DatepickerDemoCtrl">
+                <div style="display:inline-block; min-height:290px;">
+                    <uib-datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm"
+                                    custom-class="getDayClass(date, mode)"></uib-datepicker>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Event</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Contact</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Address</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
 </div>
