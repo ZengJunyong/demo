@@ -1,24 +1,80 @@
 <!doctype html>
 <html class="no-js">
 <head>
-  <meta charset="utf-8">
-  <title>Demo</title>
-  <meta name="description" content="Paktor is a popular social community">
-  <meta name="viewport" content="width=device-width">
-  <!-- build:css(app) styles/vendor.css -->
-  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
-  <!-- endbuild -->
-  <!-- build:css(app) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <meta name="description" content="Paktor is a popular social community">
+    <meta name="viewport" content="width=device-width">
+    <!-- build:css(app) styles/vendor.css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+    <!-- endbuild -->
+    <!-- build:css(app) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 </head>
 <body ng-app="PaktorApp" debug-scope>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-  your browser</a> to improve your experience.</p>
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
-{{'hello'}}
+<nav class="navbar navbar-inverse  ">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Demo Management Proposal</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <h3>1. Selection</h3>
+
+    <p>Please select the demo you would like to book</p>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <select>
+                <option value="" class="">Select the Segment</option>
+                <option value="0">End User</option>
+                <option value="1">OEM</option>
+                <option value="2">...</option>
+            </select>
+            <select style="margin-left: 100px;">
+                <option value="" class="">Select the Offer</option>
+                <option value="0">Premium</option>
+                <option value="1">Medium</option>
+                <option value="2">...</option>
+            </select>
+            <form>
+                <div class="radio">
+                    <label>
+                        MCE Size 1p Compactness 230V
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        Water Dancing Machine 2 230V
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    </label>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary">OK</button>
+        </div>
+    </div>
+
+    <h3>2. Details</h3>
+
+
+</div>
+<!-- /.container -->
 
 
 <!--[if lt IE 9]>
